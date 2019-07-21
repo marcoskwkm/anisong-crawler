@@ -15,5 +15,4 @@ This creates a `data.json` file with an array of `anime` objects. Each `anime` o
 
 ## Issues
 
-- The crawler doesn't save the type of the song (opening/ending/insert).
 - Seasons and movies are all mixed together.

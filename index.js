@@ -45,10 +45,12 @@ const getAnimeSongList = async (animeUrl) => {
   $('#songlist > .list-group-item').each((_, item) => {
     const songName = $(item).text()
     const songUrl = $(item).attr('href')
+    const info = $(item).attr('title')
     if (songUrl && songUrl !== '#') {
       songList.push({
         name: fixSongName(songName),
         lyrics: getLyrics(songUrl),
+        info: info && sanitizeText(info),
       })
     }
   })
