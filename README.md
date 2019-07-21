@@ -1,5 +1,9 @@
 # Anisong Crawler
 
+## WTF
+
+This is a crawler for anime song lyrics from http://animesonglyrics.com.
+
 ## Usage
 
 ```
