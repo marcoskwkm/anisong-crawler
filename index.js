@@ -1,5 +1,3 @@
-// Crawler for animesonglyrics.com
-
 const axios = require('axios')
 const cheerio = require('cheerio')
 const Promise = require('bluebird')
@@ -8,9 +6,6 @@ const util = require('util')
 const fs = require('fs-extra')
 
 const MAIN_URL = 'https://www.animesonglyrics.com/browse/'
-const TEST_INDEX_URL = 'https://www.animesonglyrics.com/browse/a'
-const TEST_ANIME_URL = 'https://www.animesonglyrics.com/love-live-sunshine'
-const TEST_SONG_URL = 'https://www.animesonglyrics.com/love-live-sunshine/aozora-jumping-heart'
 
 const INDEXES = 'abcdefghijklmnopqrstuvwxyz'
 
@@ -98,10 +93,6 @@ try {
         console.log(`Successully fetched ${animeList.length} animes and ${songCount} songs.`)
       })
   })
-  // getLyrics(TEST_SONG_URL).then((lyrics) => console.log(lyrics))
-  // getAnimeSongList(TEST_ANIME_URL).then((songList) => console.log(util.inspect(songList, { depth: null })))
 } catch (err) {
   console.log(err)
 }
-// getAnimeSongList(URL, ANIME_URL).then((songList) => { console.log(songList) })
-// getLyrics(URL, SONG_URL).then((lyrics) => console.log(lyrics))
