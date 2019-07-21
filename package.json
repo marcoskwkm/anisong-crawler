@@ -8,5 +8,11 @@
     "bluebird": "^3.5.5",
     "cheerio": "^1.0.0-rc.3",
     "fs-extra": "^8.1.0"
+  },
+  "devDependencies": {
+    "node": "^12.6.0"
+  },
+  "scripts": {
+    "crawler": "node index.js"
   }
 }
